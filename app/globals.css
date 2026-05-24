@@ -1,26 +1,33 @@
+/*
+This file is for global styles and is loaded before the app and page components. 
+Tailwind directives are used here so that utilities are available throughout the app. 
+Root variables are defined here so they can be reused in components.
+//Fonts:
+--font-playfair: 'Playfair Display', serif;
+--font-montserrat: 'Montserrat', sans-serif;
+//Colors:
+--background: #F8F4EE;
+--foreground: #24324A;
+*/
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: #F8F4EE;
+  --foreground: #24324A;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-heading:var(--font-playfair);
+  --font-body:var(--font-montserrat);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
 }
