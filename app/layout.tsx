@@ -24,6 +24,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Felicia Ainslie',
   description: 'Senior Product Leader focused on AI, cybersecurity, operational modernization, reusable and scalable enterprise systems.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({

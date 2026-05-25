@@ -1,38 +1,30 @@
-import Image from "next/image";
-
+import Nav from "@/components/nav";
 
 export default function Contact() {
   return (
     <main className="min-h-screen relative flex items-center justify-center px-6">
       
-      <nav className="absolute top-0 left-0 w-full px-10 py-6 flex items-center justify-between">
-        
-        <div className="flex items-center">
-          <Image src="/images/fa-logo.jpg" alt="Felicia Ainslie 'FA-Logo'" width={62} height={62} priority className="object-contain"/>
-        </div>
-
-        <div className="flex gap-8 text-sm font-medium tracking-wide [&_a]:text-[#24324A] [&_a]:hover:text-[#C9A063] [&_a]:hover:border-[#24324A] [&_a]:transition [&_a]:duration-300 [&_a]:border-b-2 [&_a]:border-transparent [&_a]:pb-1">
-        
-          <a href="/home">Home</a>
-          <a href="/portfolio">Portfolio</a>
-          
-        </div>
-
-      </nav>
+      <Nav />
 
       <section id="contact" className="max-w-5xl text-center pt-20">
 
-        <div className="resume-page">
+        <h1><em><strong>Want to collaborate?</strong></em></h1>
 
-          <h1><em><strong>Let's collaborate!</strong></em></h1>
+          <br />
 
-          <p>
-            <br />
-            <a href="mailto:FeliciaAinslie@gmail.com" className="text-[#C9A063] hover:text-[#163270] text-sm font-medium tracking-wide">
+          <div className="grid gap-6 max-w-3xl mx-auto text-left">
+
+            <a href="https://www.linkedin.com/in/feliciaainslie" target="_blank" rel="noopener noreferrer" className="text-[#163270] hover:text-[#C9A063] text-sm font-medium tracking-wide">
+              Connect on LinkedIn
+            </a>
+
+            <a href="https://www.github.com/felicia-ainslie" target="_blank" rel="noopener noreferrer" className="text-[#163270] hover:text-[#C9A063] text-sm font-medium tracking-wide">
+              View My GitHub
+            </a>
+
+            <a href="mailto:FeliciaAinslie@gmail.com" className="text-[#163270] hover:text-[#C9A063] text-sm font-medium tracking-wide">
               Email Me
             </a>
-          </p>
-
         </div>
       </section>
     </main>

@@ -3,9 +3,7 @@
 import Image from "next/image";
 
 export default function Nav() {
-  return (
-    <main className="min-h-screen relative flex items-center justify-center px-6">
-      
+  return (      
       <nav className="absolute top-0 left-0 w-full px-10 py-6 flex items-center justify-between">
         
         <div className="flex items-center">
@@ -16,10 +14,9 @@ export default function Nav() {
         
           <a href="/home">Home</a>
           <a href="/portfolio">Portfolio</a>
-          
+          <a href="/contact">Contact</a>
         </div>
 
       </nav>
-
   );
 }
