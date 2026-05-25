@@ -68,28 +68,8 @@ export default function Home() {
               <li><strong>UX & Product Collaboration:</strong> Figma, Miro, workflow mapping, live-page prototyping and workshop iteration</li>
               <li><strong>Observability & Reporting:</strong> Grafana, Splunk, DataDog, Power BI</li> 
             </ul>
-          </div>
-
-        <br />
-        <br />
-        <br />
-
-        <div className="flex flex-wrap justify-center gap-4">
-
-            <button className="bg-[#163a70] text-white px-6 py-4 rounded-xl text-md font-medium shadow-md hover:opacity-90 transition duration-300">
-              View Portfolio
-            </button>
-
-            <br />
-
-            <button className="bg-[#C9A063] text-white px-6 py-4 rounded-xl text-md font-medium shadow-md hover:opacity-90 transition duration-300">
-              Contact Felicia
-            </button>
-
-        </div>
-        
+          </div>        
       </section>
-
     </main>
   );
 }

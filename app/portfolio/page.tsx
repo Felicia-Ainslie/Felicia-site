@@ -21,10 +21,20 @@ export default function Portfolio() {
       </nav>
 
       <section id="portfolio" className="max-w-5xl text-center pt-20">
- 
 
+        <div className="resume-page">
+
+          <h1><em><strong>Portfolio Coming Soon!</strong></em></h1>
+
+          <p>
+            <br />
+            <a href="/FeliciaAinslie_Resume.pdf" download className="text-[#C9A063] hover:text-[#163270] text-sm font-medium tracking-wide">
+              Download  Resume
+            </a>
+          </p>
+
+        </div>
       </section>
-
     </main>
   );
 }

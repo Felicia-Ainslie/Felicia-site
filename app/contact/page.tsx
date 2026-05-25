@@ -21,10 +21,20 @@ export default function Contact() {
       </nav>
 
       <section id="contact" className="max-w-5xl text-center pt-20">
- 
 
+        <div className="resume-page">
+
+          <h1><em><strong>Let's collaborate!</strong></em></h1>
+
+          <p>
+            <br />
+            <a href="mailto:FeliciaAinslie@gmail.com" className="text-[#C9A063] hover:text-[#163270] text-sm font-medium tracking-wide">
+              Email Me
+            </a>
+          </p>
+
+        </div>
       </section>
-
     </main>
   );
 }
