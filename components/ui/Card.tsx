@@ -5,15 +5,18 @@ type CardProps = {
     chldren: React.ReactNode;
 };
 
-export const Card = ({ title, chldren }: CardProps) => {
+export default function Card ({ 
+    title, 
+    chldren 
+    }: CardProps) {
     return (
-        <div className="bg-[#F8F4EE] rounded-2xl shadow-sm p-6 border-[#e7dcc8] hover:border-[#C9A063] transition duration-300 ease-in-out">
+        <article className="bg-[#F8F4EE] rounded-2xl shadow-sm p-6 border-[#e7dcc8] hover:border-[#C9A063] transition duration-300 ease-in-out">
 
             <h2 className="text-2xl mb-4 text-[#163a70]">{title}</h2>
 
             <div className="text-[#24324A] leading-relaxed">
                 {chldren}
             </div>
-        </div>
+        </article>
     );
 }

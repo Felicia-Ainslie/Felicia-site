@@ -4,6 +4,7 @@ export type Project = {
     title: string;
     status: string;
     description: string;
+    repositoryUrl: string;
     tags: string[];
 };
 
@@ -12,18 +13,21 @@ export const projects: Project[] = [
         title: "Personal Portfolio Website",
         status: "In Development",
         description: "A personal portfolio website showcasing my projects, skills, and experience. Built with React and Tailwind CSS for a modern and responsive design.",
+        repositoryUrl: "https://github.com/Felicia-Ainslie/Felicia-site",
         tags: ["TypeScript", "React", "Tailwind CSS", "Web Development"],
     },
     {
-        title: "Felicia-Insights / 'Ask Felicia' AI Chatbot",
+        title: "Felicia-Insights AI Chatbot",
         status: "Planned",
-        description: "An AI-powered chatbot designed to answer questions about Felicia's background, skills, and experience. Built with React and Node.js.",
+        description: "'Ask Felicia' AI-powered chatbot designed to answer questions about Felicia's background, skills, and experience. Built with React and Node.js.",
+        repositoryUrl: "Coming Soon",
         tags: ["TypeScript", "React", "Node.js", "AI Chatbot"],
     },
     {
         title: "Release Readiness Assistant",
         status: "Planned",
         description: "An AI-supported operations concept for evaluating release readiness, stakeholder impact, rollback concerns, risks, and communication. This tool will help ensure smooth and successful software releases.",
+        repositoryUrl: "Coming Soon",
         tags: ["TypeScript", "AI", "Operations", "Release Management"],
     },
 ];

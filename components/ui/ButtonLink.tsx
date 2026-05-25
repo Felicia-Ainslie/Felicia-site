@@ -9,11 +9,11 @@ type ButtonLinkProps = {
 export default function ButtonLink({ href, children, variant = "primary" }: ButtonLinkProps) {
     const styles =
         variant === "primary"
-            ? "br-[#C9A063] text-[#F8F4EE] hover:opacity-80"
+            ? "bg-[#C9A063] text-[#F8F4EE] hover:opacity-80"
             : "bg-[#163270] text-[#F8F4EE] hover:opacity-80";
 
     return (
-        <a href={href} className={'${styles} px-8 py-4 rounded-x1 text-lr front-medium shadow-me transition duration-300'}>
+        <a href={href} className={`${styles} px-8 py-4 rounded-xl text-lg font-medium shadow-md transition duration-300`}>
             {children}
         </a>
     );
