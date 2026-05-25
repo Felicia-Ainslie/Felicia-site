@@ -1,4 +1,4 @@
-import Nav from "@/components/nav";
+import Nav from "@/components/layout/Nav";
 
 export default function Contact() {
   return (

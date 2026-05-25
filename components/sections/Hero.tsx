@@ -1,7 +1,6 @@
+//Reusable hero component for the website, includes a heading and subheading to introduce the site and its purpose. Styled with Tailwind CSS for a clean and modern look.
 
-
-import buttonLink from "./buttonLink";
-import SectionHeading from "./sectionHeading";
+import SectionHeading from "./SectionHeading";
 
 export default function Hero() {
   return (

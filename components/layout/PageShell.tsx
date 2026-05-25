@@ -1,6 +1,6 @@
 //Reusable component for page layout, includes navigation and styling
 
-import Nav from "./nav";
+import Nav from "./layout/Nav";
 
 type PageShellProps = {
   children: React.ReactNode;

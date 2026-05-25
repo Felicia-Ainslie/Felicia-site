@@ -1,6 +1,6 @@
 // Portfolio page - coming soon! For now, this page provides a link to download my resume and will be updated with project highlights and case studies in the near future.
 
-import Nav from "@/components/nav";
+import Nav from "@/components/layout/Nav";
 
 export default function Portfolio() {
   return (

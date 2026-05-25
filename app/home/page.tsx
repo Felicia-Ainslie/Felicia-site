@@ -6,9 +6,9 @@
 // #163a70 - deep blue accent / heading & primary button
 // #C9A063 - warm gold accent / button
 
-import Nav from "@/components/nav";
-import PageShell from "@/components/pageShell";
-import Hero from "@/components/hero";
+import Nav from "@/components/layout/Nav";
+import PageShell from "@/components/PageShell";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
