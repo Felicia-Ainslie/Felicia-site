@@ -1,33 +1,28 @@
-import React from "react";
-import Nav from "@/components/layout/Nav";
+import PageShell from "@/components/layout/PageShell"; 
+import SectionHeading from "@/components/ui/SectionHeading";
+import { siteData } from "@/data/site";
+import ButtonLink from "@/components/ui/ButtonLink";
 
 export default function Contact() {
   return (
-    <main className="min-h-screen relative flex items-center justify-center px-6">
-      
-      <Nav />
-
+    <PageShell centered={false}>
       <section id="contact" className="max-w-5xl text-center pt-20">
 
-        <h1><em><strong>Want to collaborate?</strong></em></h1>
+        <SectionHeading>Let's Connect!</SectionHeading>
+        <p className="mb-10">
+          I am always open to new opportunities and collaborations. <br />
+          Feel free to reach out to me through any of the platforms below!
+        </p>
+      </section>
 
-          <br />
-
-          <div className="grid gap-6 max-w-3xl mx-auto text-left">
-
-            <a href="https://www.linkedin.com/in/feliciaainslie" target="_blank" rel="noopener noreferrer" className="text-[#163270] hover:text-[#C9A063] text-sm font-medium tracking-wide">
-              Connect on LinkedIn
-            </a>
-
-            <a href="https://www.github.com/felicia-ainslie" target="_blank" rel="noopener noreferrer" className="text-[#163270] hover:text-[#C9A063] text-sm font-medium tracking-wide">
-              View My GitHub
-            </a>
-
-            <a href="mailto:FeliciaAinslie@gmail.com" className="text-[#163270] hover:text-[#C9A063] text-sm font-medium tracking-wide">
-              Email Me
-            </a>
+      <section id="links">
+        <div className="flex flex-wrap gap-4 mb-12 justify-center">
+          <ButtonLink href={siteData.socialLinks.linkedinUrl}>LinkedIn</ButtonLink>
+          <ButtonLink href={siteData.socialLinks.githubUrl} variant="secondary">GitHub</ButtonLink>
+          <ButtonLink href={siteData.email}>Email</ButtonLink>
+          <ButtonLink href={siteData.resumeUrl} variant="secondary">Download Resume</ButtonLink>
         </div>
       </section>
-    </main>
+    </PageShell>
   );
 }
