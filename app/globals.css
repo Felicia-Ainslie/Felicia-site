@@ -39,3 +39,28 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.page-title {
+  font-family: var(--font-heading);
+  color: var(--color-navy);
+  letter-spacing: var(--tracking-heading);
+  font-weight: 500;
+}
+
+.body-copy {
+  font-family: var(--font-body);
+  color: var(--color-slate);
+  line-height: 1.8;
+}
+
+.gold-text {
+  color: var(--color-gold);
+}
+
+.brand-divider {
+  border-top: 2px 
+  solid 
+  var(--color-gold);
+  height: 2px;
+  width: 10rem;
+}

@@ -10,8 +10,13 @@ type PageShellProps = {
 export default function PageShell({ children, centered = true }: PageShellProps) {
     return (
         <main className={`min-h-screen relative bg-[#F8F4EE] text-[#24324A] px-6 ${centered ? "flex items-center justify-center" : ""}`}>
+        
         <Nav />
-        {children}
-    </main>
+        
+        <div className="max-w-7xl mx-auto w-full">
+            {children}
+        </div>
+        
+        </main>
     );
 }

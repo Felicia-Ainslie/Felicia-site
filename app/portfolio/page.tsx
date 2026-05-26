@@ -19,8 +19,7 @@ export default function Portfolio() {
         </p>
       </section>
 
-      <section id="links" className="max-w-5xl text-center">
-        <div className="resume-page">
+        <div className="resume-page text-center">
           <h1>
             <em>
               <strong>Portfolio Coming Soon!</strong>
@@ -33,7 +32,6 @@ export default function Portfolio() {
             </ButtonLink>
           </p>
         </div>
-      </section>
 
       <section id="projects" className="max-w-6x1 mx-auto px-8 py-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
