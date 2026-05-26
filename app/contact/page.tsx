@@ -8,7 +8,7 @@ import ButtonLink from "@/components/ui/ButtonLink";
 export default function Contact() {
   return (
     <PageShell centered={false}>
-      <section id="contact" className="max-w-5xl text-center pt-20">
+        <section className="max-w-5x1 ms-auto px-8 py-10">
 
         <SectionHeading>Let&apos;s Connect!</SectionHeading>
         <p className="mb-10">

@@ -8,14 +8,15 @@
 
 import PageShell from "@/components/layout/PageShell";
 import Hero from "@/components/sections/Hero";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 export default function Home() {
   return (
     <PageShell centered={false}>
-      <Hero />    
-
-      <section id="home" className="max-w-5xl text-center pt-10">
+      <section className="max-w-5x1 ms-auto px-8 py-10">
       
+        <SectionHeading>Professional Summary</SectionHeading>      
+        
         <p className="align-text-left max-w-4xl mb-10 text-left leading-relaxed">
           I am a Senior Technical Product Leader specializing in cybersecurity, AI-enabled workflows, enterprise integrations, and operational platform modernization. My 8+ year background spans enterprise SaaS, UCaaS, PaaS, vulnerability management, workflow automation, release management, and large-scale technical operations, with experience leading initiatives across engineering, UX, infrastructure, and product strategy. I thrive at the intersection of systems thinking, technical collaboration, and human-centered design. Transforming complex operational challenges into scalable solutions that improve security, efficiency, and user experience. Throughout my career, I have worked closely with cross-functional teams, enterprise vendors, infrastructure providers, and integration partners internationally to align technical execution with business impact while improving operational clarity and scalability. I enjoy solving messy problems, uncovering operational friction, and building systems that teams can actually adopt, trust, and scale. I naturally gravitate toward jumping in the deep end, learning enough to be dangerous, identifying gaps, documenting more than just the solution, and delivering results that exceed expectations.
 

@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Ask() {
     return (
         <PageShell centered={false}>
-            <section className="max-w-5x1 ms-auto px-8 py-32">
+            <section className="max-w-5x1 ms-auto px-8 py-10">
 
                 <SectionHeading>Ask Felicia AI</SectionHeading>
 

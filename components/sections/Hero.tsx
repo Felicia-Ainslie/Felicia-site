@@ -12,12 +12,7 @@ export default function Hero() {
           <div className="brand-divider"> </div>
 
 
-          <h2 className="page-title">
-            <Link href="/ask">LEARN.</Link> 
-            <Link href="/contact">SOLVE.</Link> 
-            <Link href="/portfolio ">DOCUMENT.</Link> 
-            <Link href="/contact">DELIVER.</Link>
-          </h2>
+          <h2 className="page-title">LEARN.SOLVE.DOCUMENT.DELIVER.</h2>
 
     </section>
   );

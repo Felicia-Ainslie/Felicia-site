@@ -11,7 +11,7 @@ export default function Portfolio() {
   return (
     <PageShell centered={false}>
 
-      <section id="summary" className="max-w-6x1 mx-auto px-8 py-32">
+        <section className="max-w-5x1 ms-auto px-8 py-10">
         <SectionHeading>Portfolio</SectionHeading>
 
         <p className="text-xl leading-relaxed max-w-4x1 mb-12 text-[#24324A]">
