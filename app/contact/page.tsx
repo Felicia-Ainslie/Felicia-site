@@ -1,3 +1,5 @@
+//This page will be the contact page for the website. It will have links to my social media profiles and a contact form for people to reach out to me.
+
 import PageShell from "@/components/layout/PageShell"; 
 import SectionHeading from "@/components/ui/SectionHeading";
 import { siteData } from "@/data/site";

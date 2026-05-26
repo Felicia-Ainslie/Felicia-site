@@ -16,8 +16,16 @@ Root variables are defined here so they can be reused in components.
   --background: #F8F4EE;
   --foreground: #24324A;
 
+  --color-navy: #163A70;
+  --color-gold: #C9A063;
+  --color-cream: #F8F4EE;
+  --color-slate: #24324A;  
+  --color-border: #E7DCC8;
+
   --font-heading:var(--font-playfair);
   --font-body:var(--font-montserrat);
+
+  --tracking-heading: 0.18em;
 }
 
 body {
