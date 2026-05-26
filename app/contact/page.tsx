@@ -8,7 +8,7 @@ export default function Contact() {
     <PageShell centered={false}>
       <section id="contact" className="max-w-5xl text-center pt-20">
 
-        <SectionHeading>Let's Connect!</SectionHeading>
+        <SectionHeading>Let&apos;s Connect!</SectionHeading>
         <p className="mb-10">
           I am always open to new opportunities and collaborations. <br />
           Feel free to reach out to me through any of the platforms below!

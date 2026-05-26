@@ -1,6 +1,6 @@
 //Reusable hero component for the website, includes a heading and subheading to introduce the site and its purpose. Styled with Tailwind CSS for a clean and modern look.
 
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 export default function Hero() {
   return (
@@ -9,7 +9,7 @@ export default function Hero() {
 
       <div className="text-xl tracking-[0.18em] text-[#243270] mb-10"></div>
 
-      <h2 className="text-3xl tracking-wide text-[#163270] mb-10">LEAEN. SOLVE.DOCUMENT. DELIVER.</h2>
+      <h2 className="text-3xl tracking-wide text-[#163270] mb-10">LEARN. SOLVE.DOCUMENT. DELIVER.</h2>
 
     </section>
   );

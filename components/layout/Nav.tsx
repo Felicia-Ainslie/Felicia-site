@@ -13,8 +13,10 @@ export default function Nav() {
         <div className="flex gap-8 text-sm font-medium tracking-wide [&_a]:text-[#24324A] [&_a]:hover:text-[#C9A063] [&_a]:hover:border-[#24324A] [&_a]:transition [&_a]:duration-300 [&_a]:border-b-2 [&_a]:border-transparent [&_a]:pb-1">
         
           <a href="/home">Home</a>
+          <a href="/ask">Ask Felicia AI</a>
           <a href="/portfolio">Portfolio</a>
           <a href="/contact">Contact</a>
+
         </div>
 
       </nav>

@@ -6,16 +6,13 @@
 // #163a70 - deep blue accent / heading & primary button
 // #C9A063 - warm gold accent / button
 
-import Nav from "@/components/layout/Nav";
-import PageShell from "@/components/PageShell";
-import Hero from "@/components/Hero";
+import PageShell from "@/components/layout/PageShell";
+import Hero from "@/components/sections/Hero";
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative flex items-center justify-center px-6">
-
-      <Nav />
-    
+    <PageShell centered={false}>
+      <Hero />    
       <section id="home" className="max-w-5xl text-center pt-20">
         
       <br />
@@ -47,6 +44,6 @@ export default function Home() {
             </ul>
           </div>        
       </section>
-    </main>
+    </PageShell>
   );
 }
