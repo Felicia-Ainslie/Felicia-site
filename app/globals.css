@@ -62,5 +62,7 @@ body {
   solid 
   var(--color-gold);
   height: 2px;
-  width: 10rem;
-}
+  width: 90%;
+  margin: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;}

@@ -10,11 +10,11 @@ export default function Card ({
     chldren 
     }: CardProps) {
     return (
-        <article className="bg-[#F8F4EE] rounded-2xl shadow-sm p-6 border-[#e7dcc8] hover:border-[#C9A063] transition duration-300 ease-in-out">
+        <article className="rounded-2xl shadow-lg p-6">
 
-            <h2 className="text-2xl mb-4 text-[#163a70]">{title}</h2>
+            <h2 className="font-extrabbold text-2xl mb-4">{title}</h2>
 
-            <div className="text-[#24324A] leading-relaxed">
+            <div className="leading-relaxed">
                 {chldren}
             </div>
         </article>

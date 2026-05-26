@@ -11,7 +11,7 @@ export default function Ask() {
 
                 <SectionHeading>Ask Felicia AI</SectionHeading>
 
-                <p className="text-2x1 text-[#c9a063] tracking-wide mb-8">
+                <p className="gold-text tracking-wide mb-8">
                    <em><strong>First attempt at cloning myself.</strong></em>
                 </p>
 
