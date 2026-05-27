@@ -7,7 +7,6 @@
 // #C9A063 - warm gold accent / button
 
 import PageShell from "@/components/layout/PageShell";
-import Hero from "@/components/sections/Hero";
 import SectionHeading from "@/components/ui/SectionHeading";
 
 export default function Home() {

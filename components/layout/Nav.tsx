@@ -1,6 +1,7 @@
 //Reusable navigation component for the website, includes logo and links to home and portfolio pages. Styled with Tailwind CSS for a clean and modern look.
 
 import Image from "next/image";
+import TextLink from "../ui/TextLink";
 
 export default function Nav() {
   return (      
@@ -10,15 +11,14 @@ export default function Nav() {
           <Image src="/images/fa-logo.jpg" alt="Felicia Ainslie 'FA-Logo'" width={62} height={62} priority className="object-contain"/>
         </div>
 
-        <div className="flex gap-8 text-sm font-medium tracking-wide [&_a]:text-[#24324A] [&_a]:hover:text-[#C9A063] [&_a]:hover:border-[#24324A] [&_a]:transition [&_a]:duration-300 [&_a]:border-b-2 [&_a]:border-transparent [&_a]:pb-1">
+        <div className="flex gap-8 text-sm font-medium tracking-wide">
         
-          <a href="/home">Home</a>
-          <a href="/ask">Ask Felicia AI</a>
-          <a href="/portfolio">Portfolio</a>
-          <a href="/contact">Contact</a>
+          <TextLink href="/home">Home</TextLink>
+          <TextLink href="/ask">Ask Felicia AI</TextLink>
+          <TextLink href="/portfolio">Portfolio</TextLink>
+          <TextLink href="/contact">Contact</TextLink>
 
         </div>
-
       </nav>
   );
 }

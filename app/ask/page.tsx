@@ -28,7 +28,7 @@ export default function Ask() {
                 <br />
 
                 <p>
-                    If you want to see the progress of Ask Felicia AI, check out my <TextLink href="/contact">Portfolio</TextLink> where I will be posting updates on the development of Ask Felicia AI.
+                    If you want to see the progress of Ask Felicia AI, check out my <TextLink href="/portfolio">Portfolio</TextLink> where I will be posting updates on the development of Ask Felicia AI.
                 </p>
             </section>
         </PageShell>
