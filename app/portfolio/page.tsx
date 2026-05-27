@@ -6,6 +6,7 @@ import Card from "@/components/ui/Card";
 import { projects } from "@/data/projects";
 import { siteData } from "@/data/site";
 import ButtonLink from "@/components/ui/ButtonLink";
+import TextLink from "@/components/ui/TextLink";
 
 export default function Portfolio() {
   return (
@@ -46,15 +47,9 @@ export default function Portfolio() {
                     {project.description}
                   </p>
 
-                  <p className="mb-4">
-                    <a 
-                      href={project.repositoryUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#163a70] hover:text-[#163270] text-sm font-medium tracking-wide"
-                    >
-                      <span className="underline hover:text-[#C9A063]"><em>View Repository</em></span>
-                    </a>
+                  <p className="mb-4 italic">
+                    <TextLink href={project.repositoryUrl}>View Repository
+                    </TextLink>
                   </p>
 
                   <div className="flex flex-wrap gap-2">

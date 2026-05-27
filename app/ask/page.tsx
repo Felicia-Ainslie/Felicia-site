@@ -2,7 +2,7 @@
 
 import PageShell from "@/components/layout/PageShell";
 import SectionHeading from "@/components/ui/SectionHeading";
-import Link from "next/link";
+import TextLink from "@/components/ui/TextLink";
 
 export default function Ask() {
     return (
@@ -22,13 +22,13 @@ export default function Ask() {
                 <br />
 
                 <p>
-                    If you have any questions feel free to <Link href="/contact" className="text-[#c9a063] hover:text-[#24324A] font-bold">contact me</Link> and I will do my best to answer them!
+                    If you have any questions feel free to <TextLink href="/contact">contact me!</TextLink> and I will do my best to answer them!
                 </p>
 
                 <br />
 
                 <p>
-                    If you want to see the progress of Ask Felicia AI, check out my <Link href="/portfolio" className="text-[#c9a063] hover:text-[#24324A] font-bold">Portfolio</Link> where I will be posting updates on the development of Ask Felicia AI.
+                    If you want to see the progress of Ask Felicia AI, check out my <TextLink href="/contact">Portfolio</TextLink> where I will be posting updates on the development of Ask Felicia AI.
                 </p>
             </section>
         </PageShell>
