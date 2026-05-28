@@ -1,8 +1,8 @@
 // This is the page for the Ask Felicia AI project. It will be a conversational AI that is trained to mimic my personality and knowledge seeking skills. 
+//Layout is imported via "Barrel Export": components > index.ts
 
-import PageShell from "@/components/layout/PageShell";
-import SectionHeading from "@/components/ui/SectionHeading";
-import TextLink from "@/components/ui/TextLink";
+import {PageShell, SectionHeading, TextLink} from "@/components";
+
 
 export default function Ask() {
     return (

@@ -1,3 +1,8 @@
+// Reusable TextLink component for internal and external web links.
+//colors:
+//primary-text: #24324A navy
+//hover-text: #C9A063 gold
+//hover-border: #24324A navy
 
 
 import Link from "next/link";

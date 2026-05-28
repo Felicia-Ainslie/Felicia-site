@@ -4,7 +4,8 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 export default function Hero() {
   return (
-    <section id="home" className="max-w-5xl text-center pt-16">
+
+    <section id="home" className="text-center pt-4">
     
     <SectionHeading>Felicia Ainslie</SectionHeading>
 
