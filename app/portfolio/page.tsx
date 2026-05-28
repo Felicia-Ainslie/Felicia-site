@@ -1,9 +1,10 @@
 // Portfolio page - coming soon! For now, this page provides a link to download my resume and will be updated with project highlights and case studies in the near future.
 //Layout is imported via "Barrel Export": components > index.ts
+//Information is imported via "Barrel Export": data  > index.ts
+
 
 import {PageShell, SectionHeading, Card, ButtonLink, TextLink} from "@/components";
-import { projects } from "@/data/projects";
-import { siteData } from "@/data/site";
+import { projects, siteData } from "@/data";
 
 export default function Portfolio() {
   return (

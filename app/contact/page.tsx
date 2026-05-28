@@ -1,9 +1,9 @@
 //This page will be the contact page for the website. It will have links to my social media profiles and a contact form for people to reach out to me.
 //Layout is imported via "Barrel Export": components > index.ts
-
+//Information is imported via "Barrel Export": data  > index.ts
 
 import {PageShell, SectionHeading, ButtonLink} from "@/components";
-import { siteData } from "@/data/site";
+import { siteData } from "@/data";
 
 export default function Contact() {
   return (
