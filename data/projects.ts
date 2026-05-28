@@ -18,16 +18,16 @@ export const projects: Project[] = [
     },
     {
         title: "Felicia-Insights AI Chatbot",
-        status: "Planned",
+        status: "Architecture Design IP: Q3-2026",
         description: "'Ask Felicia' AI-powered chatbot designed to answer questions about Felicia's background, skills, and experience. Built with React and Node.js.",
-        repositoryUrl: "Coming Soon",
+        repositoryUrl: "https://github.com/Felicia-Ainslie/",
         tags: ["TypeScript", "React", "Node.js", "AI Chatbot"],
     },
     {
         title: "Release Readiness Assistant",
-        status: "Planned",
+        status: "Planned Q4-2026",
         description: "An AI-supported operations concept for evaluating release readiness, stakeholder impact, rollback concerns, risks, and communication. This tool will help ensure smooth and successful software releases.",
-        repositoryUrl: "Coming Soon",
+        repositoryUrl: "https://github.com/Felicia-Ainslie/",
         tags: ["TypeScript", "AI", "Operations", "Release Management"],
     },
 ];

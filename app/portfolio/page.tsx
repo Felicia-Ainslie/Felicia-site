@@ -10,10 +10,11 @@ export default function Portfolio() {
   return (
     <PageShell centered={false}>
 
-        <section className="max-w-5x1 ms-auto px-8 py-10">
+      <section className="max-w-5x1 ms-auto px-8 py-10">
+      
         <SectionHeading>Portfolio</SectionHeading>
 
-        <p className="text-xl leading-relaxed max-w-4x1 mb-12 text-[#24324A]">
+        <p className="body">
           A growing collection of product concepts, AI-enabled workflow prototypes, cybersecurity operations models, and technical product artifacts that demonstrate how I approach complex systems.
         </p>
       </section>
@@ -54,7 +55,7 @@ export default function Portfolio() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-sm bg-[#F8F4EE] text-[#163A70] px-3 py-1 rounded-full border border-[#E7DDCC8]"
+                        className="text-sm bg-[#163A70] text-[#F8F4EE] px-3 py-1 rounded-full border border-[#E7DDCC8]"
                       >
                         {tag}
                       </span>

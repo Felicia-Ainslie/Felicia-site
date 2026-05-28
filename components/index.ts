@@ -7,3 +7,4 @@ export { default as TextLink } from "./ui/TextLink";
 export { default as ButtonLink } from "./ui/ButtonLink";
 export { default as Card } from "./ui/Card";
 export { default as SectionHeading } from "./ui/SectionHeading";
+export { default as List } from "./ui/List";

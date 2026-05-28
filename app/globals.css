@@ -21,6 +21,7 @@ Root variables are defined here so they can be reused in components.
   --color-cream: #F8F4EE;
   --color-slate: #24324A;  
   --color-border: #E7DCC8;
+  --color-pale-blue: #E6EEF8;
 
   --font-heading:var(--font-playfair);
   --font-body:var(--font-montserrat);
@@ -31,9 +32,8 @@ Root variables are defined here so they can be reused in components.
 body {
   background: var(--background);
   color: var(--foreground);
-  margin: 0;
-  padding: 0;
   font-family: var(--font-body);
+  margin-bottom: 10;
 }
 
 * {
@@ -44,13 +44,14 @@ body {
   font-family: var(--font-heading);
   color: var(--color-navy);
   letter-spacing: var(--tracking-heading);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .body-copy {
   font-family: var(--font-body);
   color: var(--color-slate);
   line-height: 1.8;
+  margin-bottom:10;
 }
 
 .gold-text {
