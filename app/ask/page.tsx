@@ -7,7 +7,7 @@ import {PageShell, SectionHeading, TextLink} from "@/components";
 export default function Ask() {
     return (
         <PageShell centered={false}>
-            <section className="max-w-5x1 ms-auto px-8 py-10">
+            <section className="content-width">
 
                 <SectionHeading>Ask Felicia AI</SectionHeading>
 

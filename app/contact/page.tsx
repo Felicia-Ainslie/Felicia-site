@@ -8,7 +8,7 @@ import { siteData } from "@/data";
 export default function Contact() {
   return (
     <PageShell centered={false}>
-      <section className="max-w-5x1 ms-auto px-8 py-10">
+      <section className="content-width">
 
         <SectionHeading>Let&apos;s Connect!</SectionHeading>
         <p>

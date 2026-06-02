@@ -29,7 +29,7 @@ Root variables are defined here so they can be reused in components.
   --tracking-heading: 0.18em;
 }
 
-body {
+.body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
@@ -67,3 +67,10 @@ body {
   margin: 0.5rem;
   margin-left: auto;
   margin-right: auto;}
+
+  .content-width {
+    max-width: 80rem;
+    margin-inline-start: auto;
+    padding-block: calc(var(--spacing) * 10) /* 2.5rem = 40px */;
+    padding-inline: calc(var(--spacing) * 8) /* 2rem = 32px */;
+  }

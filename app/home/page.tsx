@@ -13,7 +13,7 @@ import { profile } from "@/data";
 export default function Home() {
   return (
     <PageShell centered={false}>
-      <section className="max-w-5x1 ms-auto px-8 py-10">
+      <section className="content-width">
       
         <SectionHeading>Professional Summary</SectionHeading>      
         
@@ -27,7 +27,7 @@ export default function Home() {
             
             <h4 className="page-title">TECHNICAL & PRODUCT LEADERSHIP</h4>
 
-              <List items={profile.skills} className="body"/>
+              <List items={profile.skills}/>
 
           </div>        
       </section>

@@ -33,7 +33,7 @@ export default function Portfolio() {
           </p>
         </div>
 
-      <section id="projects" className="max-w-6x1 mx-auto px-8 py-32">
+      <section id="projects" className="content-width">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Card
@@ -41,12 +41,14 @@ export default function Portfolio() {
               title={project.title}
               chldren={
                 <>
-                  <p className="text-sm uppercase tracking-wide text-[#C9A063] mb-3">{project.status}</p>
-                  <p className="leading-relaxed mb-6 text-[#24324A]">
+                  <p className="gold-text text-sm uppercase font-medium tracking-wide mb-3">{project.status}</p>
+                  <p>
                     {project.description}
                   </p>
+                  
+                  <br />
 
-                  <p className="mb-4 italic">
+                  <p className="mb-4 italic text-center">
                     <TextLink href={project.repositoryUrl}>View Repository
                     </TextLink>
                   </p>
@@ -55,7 +57,7 @@ export default function Portfolio() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-sm bg-[#163A70] text-[#F8F4EE] px-3 py-1 rounded-full border border-[#E7DDCC8]"
+                        className="text-sm bg-[#163A70] text-[#F8F4EE] mt-2 px-2 py-2 rounded-full border border-[#E7DDCC8]"
                       >
                         {tag}
                       </span>
