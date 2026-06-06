@@ -1,3 +1,5 @@
+// The tsconfig.json file is used to specify root files and compiler options required to compile the project. 
+
 {
   "compilerOptions": {
     "target": "ES2017",
