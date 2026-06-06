@@ -1,4 +1,4 @@
-//Test for ButtonLink component to ensure it renders correctly and has the correct href attribute.
+//Test for Card component to ensure it renders correctly and has the correct attributes.
 
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
