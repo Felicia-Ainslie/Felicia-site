@@ -39,33 +39,34 @@ export default function Portfolio() {
             <Card
               key={project.title}
               title={project.title}
-              chldren={
-                <>
-                  <p className="gold-text text-sm uppercase font-medium tracking-wide mb-3">{project.status}</p>
-                  <p>
-                    {project.description}
-                  </p>
-                  
-                  <br />
+            >
+              <p className="gold-text text-sm uppercase font-medium tracking-wide mb-3">
+                {project.status}
+              </p>
 
-                  <p className="mb-4 italic text-center">
-                    <TextLink href={project.repositoryUrl}>View Repository
-                    </TextLink>
-                  </p>
+              <p>
+                {project.description}
+              </p>
 
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-sm bg-[#163A70] text-[#F8F4EE] mt-2 px-2 py-2 rounded-full border border-[#E7DDCC8]"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </>
-              }
-            />
+              <br />
+
+              <p className="mb-4 italic text-center">
+                <TextLink href={project.repositoryUrl}>
+                  View Repository
+                </TextLink>
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-sm bg-[#163A70] text-[#F8F4EE] mt-2 px-2 py-2 rounded-full border border-[#E7DDCC8]"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </Card>
           ))}
         </div>
       </section>
