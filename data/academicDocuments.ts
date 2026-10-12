@@ -1,5 +1,7 @@
 // Original academic work downloaded from the two Wix capstone pages.
 // Keep sourceUrl for provenance; href points to the preserved local file.
+// Exception: the oversized master's presentation downloads from Wix; archivePath
+// preserves its original bytes outside public/ so Cloudflare Pages can publish the site.
 // PDFs support browser reading; spreadsheets and presentations download in their original formats.
 export interface AcademicDocument {
   group: "bachelor" | "master";
@@ -8,6 +10,7 @@ export interface AcademicDocument {
   sourceUrl: string;
   format: string;
   size: string;
+  archivePath?: string;
 }
 
 export const academicDocuments: readonly AcademicDocument[] = [
@@ -167,7 +170,8 @@ export const academicDocuments: readonly AcademicDocument[] = [
     "group": "master",
     "title": "Final Project Presentation",
     "sourceUrl": "https://2ce4a178-75d1-45dc-aaad-b0158d04a88d.filesusr.com/ugd/2c56df_d941fb5466b545a6a86405d29eaaa68e.pptx?dn=Masters%20Final%20Project%20Presentation.pptx",
-    "href": "/documents/education/masters-final-project-presentation.pptx",
+    "href": "https://2ce4a178-75d1-45dc-aaad-b0158d04a88d.filesusr.com/ugd/2c56df_d941fb5466b545a6a86405d29eaaa68e.pptx?dn=Masters%20Final%20Project%20Presentation.pptx",
+    "archivePath": "assets/education/masters-final-project-presentation.pptx",
     "format": "PPTX",
     "size": "32.3 MB"
   },

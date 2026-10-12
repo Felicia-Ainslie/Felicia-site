@@ -30,17 +30,20 @@ export default function TextLink({ href, children, className, download }: TextLi
     // use a native anchor and a downward arrow; internal navigation stays in this tab.
     // ButtonLink deliberately retains its separate appearance and behavior.
     const isDownload = download !== undefined && download !== false;
-    const opensNewTab = /^(?:https?:\/\/|\/\/|mailto:)/i.test(href) || /\.pdf(?:[?#]|$)/i.test(href);
+    const isExternal = /^(?:https?:\/\/|\/\/|mailto:)/i.test(href);
+    const opensNewTab = isExternal || /\.pdf(?:[?#]|$)/i.test(href);
     const content = (
         <>
             {children}
             {(isDownload || opensNewTab) && <span aria-hidden="true"> {isDownload ? "↓" : "↗"}</span>}
-            {!isDownload && opensNewTab && <span className="sr-only"> (opens in a new tab)</span>}
+            {((!isDownload && opensNewTab) || (isDownload && isExternal)) && <span className="sr-only"> (opens in a new tab)</span>}
         </>
     );
 
     if (isDownload) {
-        return <a href={href} download={download} className={combinedClassName}>{content}</a>;
+        // Cross-origin downloads depend on the host's Content-Disposition header.
+        // Keep the current page available if the browser follows the URL instead.
+        return <a href={href} download={download} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined} className={combinedClassName}>{content}</a>;
     }
 
     return (

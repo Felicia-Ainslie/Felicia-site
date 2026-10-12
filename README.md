@@ -70,6 +70,8 @@ Employment contributions come from my resume; the individual roles and credentia
 
 Academic capstones are clearly identified as school projects for fictional organizations. Their original PDFs, spreadsheets, and presentations are preserved in `public/documents/education/`; the locally available course certificate is in `public/documents/certificates/`. Other credentials remain on their issuer sites and may require sign-in.
 
+Cloudflare Pages limits individual assets to 25 MiB. The 32.3 MiB master's final presentation uses its original Wix download URL; an unchanged archive copy is kept in `assets/education/`, outside the published `public/` directory. Keep that exception when updating document links. The public-asset size test catches oversized additions before deployment.
+
 Maintain explanatory comments when making layout changes. Update the relevant content module instead of duplicating descriptions across pages. Preserve original academic files; add previews or summaries separately. Project status should distinguish live work, work in progress, and developing concepts.
 
 The FA logo is `public/images/FA-logo.jpg`. Its URL must match that capitalization exactly. The resume remains in `public/documents/`.

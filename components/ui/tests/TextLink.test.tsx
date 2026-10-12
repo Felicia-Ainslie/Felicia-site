@@ -57,4 +57,14 @@ describe("TextLink", () => {
         expect(link).not.toHaveAttribute("target");
         expect(link.textContent).toBe("Experience");
     });
+
+    it("keeps external downloads in a new tab with the download arrow", () => {
+        render(<TextLink href="https://example.com/presentation.pptx" download>Download presentation</TextLink>);
+        const link = screen.getByRole("link", { name: /Download presentation/ });
+        expect(link).toHaveAttribute("download");
+        expect(link).toHaveAttribute("target", "_blank");
+        expect(link).toHaveAttribute("rel", "noopener noreferrer");
+        expect(link).toHaveTextContent("↓");
+        expect(link).not.toHaveTextContent("↗");
+    });
 });
