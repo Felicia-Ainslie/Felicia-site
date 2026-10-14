@@ -30,7 +30,7 @@ export const workExperience: readonly WorkExperience[] = [
     "contributions": [
       "Lead planning, financial estimation, and proposal development for multimillion-dollar cybersecurity, AI, integration, and enterprise platform product portfolios, balancing delivery execution, risk reduction, scalability, and stakeholder priorities.",
       "Directly manage software development (6) and product support (3) teams, setting priorities, removing blockers, coaching execution, and aligning day-to-day delivery with product and portfolio goals.",
-      "Lead cross-functional partnership with a 12-person VSE data engineering organization, guiding data quality, reporting strategy, integrations, and platform workflow decisions through influence-based leadership.",
+      "Lead cross-functional partnership with a 12-person data engineering organization, guiding data quality, reporting strategy, integrations, and platform workflow decisions through influence-based leadership.",
       "Partner with engineering teams across React, TypeScript, Node.js, APIs, cloud infrastructure, and event-driven workflows to guide delivery, technical prioritization, and implementation tradeoffs.",
       "Support engineering collaboration through code review participation, drafting implementation starters, workflow validation, and technical requirement refinement.",
       "Drive governance and remediation workflow improvements focused on ownership visibility, exception handling, escalation management, and operational scalability.",
