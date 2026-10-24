@@ -56,7 +56,7 @@ The site uses Next.js App Router, React, TypeScript, and Tailwind CSS. It keeps 
 - `app/globals.css`: brand tokens, shared warm panels, link behavior, and responsive page styles. Playfair Display is the heading font; Montserrat is the body font. Decorative gold and the darker gold text color use separate tokens for readability.
 - `data/profile.ts`: my handwritten summary and profile information.
 - `data/technicalSkills.ts`: the complete skills inventory, rendered on Experience.
-- `data/experience.ts`: employer contributions and individual Nextiva role history.
+- `data/experience.ts`: employer contributions and individual role history.
 - `data/education.ts`: degrees, certificate links, and academic project quick reads shared by Experience and Portfolio.
 - `data/academicDocuments.ts`: local document paths, original source URLs, formats, and file sizes.
 - `data/projects.ts`: project descriptions, technologies, repository links, and availability.
