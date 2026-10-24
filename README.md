@@ -2,7 +2,7 @@
 
 Learn. Solve. Document. Deliver.
 
-This is my personal portfolio and a working example of how I approach building software. It brings together my product leadership, technical experience, education, and independent projects, from enterprise cybersecurity work to games made with my family.
+This is my personal portfolio and a working example of how I approach building software. It brings together my product leadership, technical experience, education, and independent projects from enterprise cybersecurity work to games made with my family.
 
 I enjoy solving messy problems, uncovering operational friction, and building systems that teams can actually adopt, trust, and scale. This site is a place to share that work, the learning behind it, and the perspective I bring to product decisions.
 
