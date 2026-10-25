@@ -43,9 +43,20 @@ Resolve dependency audit findings before committing or deploying. Run the full `
 
 The scoped override in `package.json` replaces the Next.js ESLint plugin's `fast-glob` dependency with `tinyglobby` 0.2.17, removing the vulnerable `micromatch`/`braces` chain. It preserves the plugin's directory-matching API without downgrading Next.js, disabling lint rules, or suppressing audit findings. `tests/lintDependencies.test.ts` verifies directory matching and Next.js rule execution. Reassess the override when updating `eslint-config-next`.
 
-Use `npm run test:watch` for focused development. To serve the production build locally, run `npm run start` after building.
+Use `npm run test:watch` for focused development.
 
 The build downloads Playfair Display and Montserrat through `next/font/google`, so it requires access to Google Fonts. Automated tests cover shared links/components and the integrity of local document collections and content references. They do not replace desktop/mobile visual or keyboard checks.
+
+### Preview the static production build
+
+`next.config.ts` uses `output: "export"`. Run `npm run build` to generate the static site in `out/`, then serve that directory from the repository root:
+
+```bash
+npm run build
+npx serve out
+```
+
+Open the local URL printed by `serve`. If prompted, `npx` downloads the preview utility without adding it to the project's dependencies. Do not use `npm run start` (`next start`) for this static export.
 
 ## How the code is organized
 
@@ -78,7 +89,9 @@ The FA logo is `public/images/FA-logo.jpg`. Its URL must match that capitalizati
 
 ## Publishing
 
-This repository contains the website source. Local builds and tests do not publish it. Preserve the existing hosting setup; do not commit `.next/`, `node_modules/`, credentials, or environment files. The hosting provider must support this project's Next.js configuration.
+This repository contains the website source. The build command is `npm run build`, and the deployment/output directory is `out/`. Publish the contents of `out/` through the existing static-hosting workflow; a Next.js production server is not needed.
+
+Local builds and tests do not publish the site. Preserve the existing hosting setup; do not commit `out/`, `.next/`, `node_modules/`, credentials, or environment files.
 
 
 ## Social brand assets
